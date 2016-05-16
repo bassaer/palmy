@@ -1,0 +1,349 @@
+@charset "UTF-8"
+    
+html{
+    font-size:62.5%;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+/*ヘッダー部分*/
+.header{
+    background-color: #fff;
+    /*position:static;*/
+    padding: 0px 20px 20px;
+    text-align: left;
+    background-image: url('../images/header_kadai2.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 110px;
+    position: relative;
+    text-align: right;
+}
+
+.palmy_header{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.header_right{
+    padding: 0px 40px 0px;
+}
+
+.header ul li{
+    display: inline-block;
+    margin: 0px 20px;
+    letter-spacing: normal;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+a.login_button{
+    display: inline-block;
+    background-color: #fab1b9;
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+    width:80px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-decoration: none;
+}
+
+a.signup_button{
+    display: inline-block;
+    background: #bdffc2;
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+    width:80px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-decoration: none;
+}
+
+a.login_button:hover{
+    /*text-decoration: underline;*/
+    background-color: #f78790;
+    opacity: 0.9;
+}
+a.signup_button:hover{
+    /*text-decoration: underline;*/
+    background: #86ff8f;
+    opacity: 0.9;
+}
+
+.title {
+    position: absolute;
+    background-image: url('../images/mizu_back.jpg');
+    width: 100%;
+}
+
+.button_header{
+    text-align: center;
+}
+
+.button_header ul li a:hover{
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.button_header ul{
+    font-size: 0;
+}
+
+.button_header ul li{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0;
+    width: 120px;
+    height: 25%;
+    letter-spacing: normal;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.button_header ul li a{
+    color: #333;
+    text-decoration: none;
+}
+
+/*Categoriesの部分*/
+.categories{
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.categories-main{
+    vertical-align: top;
+}
+
+.categories-box{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.categories-box-header{
+
+}
+
+.categories-box1-icon{
+}
+
+.categories-box1-furniture{
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.categories-box1-furniture:hover{
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.categories-box-contents{
+    border: medium #9f9797 solid;
+    border-radius: 10px;
+}
+
+.categories-box-contents ul{
+    height: 600px;
+    */*overflow: scroll;*/
+    
+}
+
+.categories-box-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    width: 200px;
+    height: 40px;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 1.0rem;
+}
+
+.categories-box-contents ul li a{
+    color: #333;
+    text-decoration: none;
+}
+
+.categories-box-contents ul li a:hover{
+    text-decoration: underline;
+    opacity: 0.9;
+    color: #333;
+}
+
+.categories-box2-icon{
+}
+
+.categories-box2-electronics{
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+
+.categories-box2-electronics:hover{
+    text-decoration: underline;
+    color: #333;
+    opacity: 0.9;
+}
+
+.categories-box3-icon{
+}
+
+.categories-box3-book{
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.categories-box3-book:hover{
+    text-decoration: underline;
+    color: #333;
+    opacity: 0.9;
+}
+
+.categories-box4-icon{
+}
+
+.categories-box4-vehicle{
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.categories-box4-vehicle:hover{
+    text-decoration: underline;
+    color: #333;
+    opacity: 0.9;
+}
+
+.categories-box5-icon{
+}
+
+.categories-box5-manga{
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.categories-box5-manga:hover{
+    text-decoration: underline;
+    color: #333;
+    opacity: 0.9;
+}
+
+/*Footer*/
+.footer{
+    padding: 12px 0;
+    font-size: 1.0rem;
+}
+
+
+/*メディアクエリ(スマホ用)*/
+@media (max-width: 1024px){
+    body{
+    background-image: none;
+    }
+}
+
+@media (max-width: 768px){
+
+    .site-title-sub::before,
+    .site-title-sub::after{
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .site-title-sub{
+        font-size: 1.7rem;
+    }
+
+    .site-title{
+        margin-top: 35px;
+        font-size: 2.2rem;
+    }
+
+    .header{
+        background-size:cover;
+        padding-top: 10px;
+        width: 400px;
+        height: 80px;
+    }
+    
+    .header ul li{
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    width: 200px;
+    height: 40px;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 1.0rem;
+    }
+
+    .button:hover{
+        opacity: 1;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    body{
+    font-size: 1.3rem;
+    }
+
+    .palmy-text{
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+    
+    .categories-main{
+        display: block;
+    }
+    
+    .categories-box-contents{
+        width: 250px;
+    }
+    
+    .categories-box contents ul{
+       
+    }
+    
+    .categories-box contents ul li{
+     
+    }
+    
+    .categories-box-contents ul li a{
+    color: #333;
+    text-decoration: none;
+}
+
+   .contact-form{
+       width: 80%;
+   }
+    
+    .contact{
+        padding-bottom: 80px;
+    }
+    
+}

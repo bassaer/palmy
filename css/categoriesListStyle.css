@@ -1,0 +1,296 @@
+@charset "UTF-8"
+    
+html{
+    font-size:62.5%;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+/*ヘッダー部分*/
+.header{
+    background-color: #fff;
+    padding: 50px 20px 20px;
+    text-align: left;
+}
+
+.palmy_header {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.title {
+    position: absolute;
+    background-image: url('../images/mizu_back.jpg');
+    width: 100%;
+}
+
+.button_header{
+    text-align: center;
+}
+
+.button_header ul li a:hover{
+    text-decoration: underline;
+    opacity: 0.9;
+    color: #333;
+}
+
+.button_header ul{
+    font-size: 0;
+}
+
+.button_header ul li{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0;
+    width: 120px;
+    height: 25%;
+    text-align: center;
+    letter-spacing: normal;
+    font-size: 0.9rem;
+}
+
+.button_header ul li a{
+    color: #333;
+    text-decoration: none;
+}
+
+/*Categoriesの部分*/
+.categories{
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.categories-contents{
+    text-align: center;
+}
+
+.categories-contents ul{
+    height: 3px;
+}
+
+.categories-contents ul li{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0;
+    width: 9em;
+    height: 3px;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.categories-contents ul li a{
+    color: #333;
+    text-decoration: none;
+}
+
+.categories-contents ul li a:hover{
+    opacity: 0.9;
+    text-decoration: underline;
+    color: #333;
+}
+
+/*Categories_footerの部分*/
+.categories-footer{
+    background-color: #3e3d3d;
+    padding: 80px 0;
+}
+
+.categories-footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.heading{
+    position: relative;
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+.heading::before,
+.heading::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid #999;
+}
+.heading::before{
+    bottom: 5px;
+}
+.categories-main{
+    vertical-align: top;
+}
+
+.categories-box{
+    display: inline-block;
+}
+
+.categories-box-header{
+
+}
+
+.categories-box-contents{
+    border: medium #9f9797 solid;
+    border-radius: 10px;
+}
+
+.categories-box-contents ul{
+    height: 200px;
+    overflow: scroll;
+    
+}
+
+.categories-box-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    width: 200px;
+    height: 30px;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.categories-box-contents ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.categories-box1-icon{
+}
+
+.categories-box1-furniture{
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+
+.categories-box2-icon{
+}
+
+.categories-box2-electronics{
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+
+.categories-box3-icon{
+}
+
+.categories-box3-book{
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+
+.categories-box4-icon{
+}
+
+.categories-box4-vehicle{
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+
+.categories-box5-icon{
+}
+
+.categories-box5-manga{
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+
+/*Footer*/
+.footer{
+    padding: 12px 0;
+    font-size: 1.0rem;
+}
+
+
+/*メディアクエリ(スマホ用)*/
+@media (max-width: 1024px){
+    body{
+    background-image: none;
+    }
+}
+
+@media (max-width: 768px){
+
+    .site-title-sub::before,
+    .site-title-sub::after{
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .site-title-sub{
+        font-size: 1.7rem;
+    }
+
+    .site-title{
+        margin-top: 35px;
+        font-size: 2.2rem;
+    }
+
+    .header{
+        padding-top: 60px;
+    }
+
+    .button:hover{
+        opacity: 1;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    body{
+    font-size: 1.3rem;
+    }
+
+    .palmy-text{
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+    
+    .categories-main{
+        display: block;
+    }
+    
+    .categories-box-contents{
+        width: 250px;
+    }
+    
+    .categories-box contents ul{
+       
+    }
+    
+    .categories-box contents ul li{
+     
+    }
+    
+    .categories-box-contents ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+   .contact-form{
+       width: 80%;
+   }
+    
+    .contact{
+        padding-bottom: 80px;
+    }
+    
+}

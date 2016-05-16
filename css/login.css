@@ -1,0 +1,88 @@
+@charset "UTF-8"
+    
+html{
+    font-size:62.5%;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    background-size: cover;
+    color: #000;
+    text-align: center;
+    font-size: 1.4rem;    
+}
+/*ヘッダー部分*/
+.header{
+    padding: 170px 30px 80px;
+    
+}
+
+/*ログイン*/
+
+.main_login{
+    padding: 170px 30px 200px;
+}
+
+.position{
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    height: 330px;
+    border: thin #ccc solid;
+    border-radius: 20px;
+}
+
+.title-style{
+    font-size: 1.2rem;
+}
+
+.login input[type=text]{
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border: thin #ccc solid;
+    border-radius:40px;
+}
+
+.login input[type=password]{
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border: thin #ccc solid;
+    border-radius:40px;
+}
+
+.login{
+    padding: 0 30px 80px;
+    text-align: left;
+}
+
+.login input[type=submit]{
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border: thin #f4f4f4 solid;
+    border-radius:40px;
+}
+.regist{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.regist a{
+    padding: 50px 0;
+    color: #000;
+    font-size: 1.0rem;
+}
+
+.regist a:hover{
+    opacity: 0.9;
+}
+
+.footer{
+    padding: 12px 0;
+    font-size: 1.0rem;
+}

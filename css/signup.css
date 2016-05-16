@@ -1,0 +1,107 @@
+@charset "UTF-8"
+    
+html{
+    font-size:62.5%;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    background-size: cover;
+    color: #000;
+    text-align: center;
+    font-size: 1.4rem;
+    
+}
+/*ヘッダー部分*/
+.header{
+    padding: 170px 30px 80px;
+    
+}
+
+/*ログイン*/
+.regist{
+    padding: 170px 30px 200px;
+}
+
+.position{
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    border: thin #ccc solid;
+    border-radius: 20px;
+}
+
+.title-style{
+    font-size: 1.2rem;
+}
+
+.login{
+    padding: 0 30px 80px;
+    text-align: left;
+}
+
+.login input[type=text]{
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border: thin #ccc solid;
+    border-radius:40px;
+}
+
+.login input[type=mail]{
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border: thin #ccc solid;
+    border-radius:40px;
+}
+
+.login input[type=password]{
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border: thin #ccc solid;
+    border-radius:40px;
+}
+
+.login input[type=submit]{
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border: thin #f4f4f4 solid;
+    border-radius:40px;
+}
+
+.login input[type=submit]:hover{
+    opacity: 0.8;
+}
+.login input[type=text]:focus,
+.login input[type=mail],
+.login input[type=password],
+.login input[type=submit]{
+    outline:none;
+}
+
+.text-center{
+    padding: 5px;
+    text-align: center;
+}
+
+.text-back{
+    padding: 5px 0 0;
+    text-align: center;
+}
+
+.text-back a{
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.footer{
+    padding: 12px 0;
+    font-size: 1.0rem;
+}
